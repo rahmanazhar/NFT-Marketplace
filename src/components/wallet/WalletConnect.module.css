@@ -1,0 +1,84 @@
+.wallet-connect-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.wallet-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(55, 114, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.address {
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #3772FF;
+    font-weight: 600;
+}
+
+.connect-button,
+.disconnect-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.connect-button {
+    background: #3772FF;
+    color: white;
+}
+
+.connect-button:hover {
+    background: #2954cc;
+}
+
+.connect-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.disconnect-button {
+    background: #f44336;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}
+
+.disconnect-button:hover {
+    background: #d32f2f;
+}
+
+.error-message {
+    color: #f44336;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 1rem;
+}
+
+@media (max-width: 768px) {
+    .wallet-connect-container {
+        padding: 0.75rem;
+    }
+    
+    .wallet-info {
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .connect-button,
+    .disconnect-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+}
